@@ -1,0 +1,66 @@
+extends ../../layout  
+
+block content 
+
+
+    .d-flex.align-items-start.flex-column.flex-md-row
+
+        .tab-content.w-100.overflow-auto.rder-2.order-md-1
+
+            //- Activity
+            #activity.tab-pane.fade
+                h1 Activity
+
+            //- Schedule
+            #schedule.tab-pane.fade
+                h1 Schedule
+
+            //- Settings
+            include subpages/settings
+
+
+
+        .sidebar.sidebar-light.bg-transparent.sidebar-component.sidebar-component-right.wmin-300.border-0.shadow-0.order-1.order-md-2.sidebar-expand-md
+
+            //- User Card =============
+            .card
+                .card-body.text-center
+                    .card-img-actions.d-inline-block.mb-3
+                        img.img-fluid.rounded-circle(src='/global_assets/images/placeholders/placeholder.jpg', width='170', height='170', alt='')
+                        .card-img-actions-overlay.card-img.rounded-circle
+                            a.btn.btn-outline.bg-white.text-white.border-white.border-2.btn-icon.rounded-round(href='#')
+                                i.icon-plus3
+                            a.btn.btn-outline.bg-white.text-white.border-white.border-2.btn-icon.rounded-round.ml-2(href='user_pages_profile.html')
+                                i.icon-link
+                    h6.font-weight-semibold.mb-0 Hanna Dorman
+                    span.d-block.text-muted UX/UI designer
+                    .list-icons.list-icons-extended.mt-3
+                        a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Google Drive')
+                            i.icon-google-drive
+                        a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Twitter')
+                            i.icon-twitter
+                        a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Github')
+                            i.icon-github
+
+            //- Share ur Thoughts
+            .card
+                .card-header.bg-transparent.header-elements-inline
+                    span.card-title.font-weight-semibold Share your thoughts
+                    .header-elements
+                        .list-icons
+                            a.list-icons-item(data-action='collapse')
+                .card-body
+                    form(action='#')
+                        textarea.form-control.mb-3(name='enter-message', rows='3', cols='1', placeholder='Enter your message...')
+                        .d-flex.align-items-center
+                            .list-icons.list-icons-extended
+                                a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Add photo')
+                                    i.icon-images2
+                                a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Add video')
+                                    i.icon-film2
+                                a.list-icons-item(href='#', data-popup='tooltip', title='', data-container='body', data-original-title='Add event')
+                                    i.icon-calendar2
+                            button.btn.bg-blue.btn-labeled.btn-labeled-right.ml-auto(type='button')
+                                b
+                                    i.icon-paperplane
+                                |  Share

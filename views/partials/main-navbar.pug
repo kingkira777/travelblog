@@ -1,0 +1,94 @@
+// Main navbar
+.navbar.navbar-expand-md.navbar-dark.fixed-top
+    .navbar-brand.wmin-200
+        a.d-inline-block(href='/')
+            img(src='/global_assets/images/logo_light.png', alt='')
+    .d-md-none
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar-mobile')
+            i.icon-tree5
+        button.navbar-toggler.sidebar-mobile-main-toggle(type='button')
+            i.icon-paragraph-justify3
+    #navbar-mobile.collapse.navbar-collapse
+        //- ul.navbar-nav
+        //-     li.nav-item
+        //-         a.navbar-nav-link.sidebar-control.sidebar-main-toggle.d-none.d-md-block(href='#')
+        //-             i.icon-paragraph-justify3
+        ul.navbar-nav.ml-auto
+            li.nav-item
+                a.navbar-nav-link(href='#')
+                    | Text link
+            li.nav-item.dropdown
+                a.navbar-nav-link(href='#')
+                    i.icon-bell2
+                    span.d-md-none.ml-2 Notifications
+                    span.badge.badge-mark.border-white.ml-auto.ml-md-0
+            li.nav-item.dropdown.dropdown-user
+                a.navbar-nav-link.d-flex.align-items-center.dropdown-toggle(href='#', data-toggle='dropdown')
+                    img.rounded-circle.mr-2(src='/global_assets/images/image.png', height='34', alt='')
+                    span Victoria
+                .dropdown-menu.dropdown-menu-right
+                    a.dropdown-item(href='/users/profile')
+                        i.icon-user-plus
+                        |  My profile
+                    a.dropdown-item(href='#')
+                        i.icon-comment-discussion
+                        |  Messages 
+                        span.badge.badge-pill.bg-blue.ml-auto 58
+                    .dropdown-divider
+                    a.dropdown-item(href='#')
+                        i.icon-switch2
+                        |  Logout
+// /main navbar
+// Alternative navbar
+.navbar.navbar-expand-md.navbar-light
+    .text-center.d-md-none.w-100
+        button.navbar-toggler.dropdown-toggle(type='button', data-toggle='collapse', data-target='#navbar-second')
+            i.icon-unfold.mr-2
+            | 					Alternative navbar
+    #navbar-second.navbar-collapse.collapse
+        ul.navbar-nav
+            li.nav-item
+                a.navbar-nav-link(href='/places')
+                    i.fa.fa-plane-departure
+                    |       Places
+            li.nav-item
+                a.navbar-nav-link(href='#')
+                    i.fa.fa-umbrella-beach
+                    |       Beaches
+            li.nav-item
+                a.navbar-nav-link(href='#')
+                    i.fa.fa-mountain
+                    |       Mountains
+            li.nav-item
+                a.navbar-nav-link(href='#')
+                    i.fa.fa-hotel
+                    |       Hotels
+            li.nav-item
+                a.navbar-nav-link(href='#')
+                    i.fa.fa-map-signs
+                    |       Others
+                    
+                    //- span.badge.badge-pill.bg-indigo-400.position-static.ml-auto.ml-md-2 5
+        //-     li.nav-item.dropdown
+        //-         a.navbar-nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+        //-             | Mountain
+        //-         .dropdown-menu
+        //-             a.dropdown-item(href='#') Action
+        //-             a.dropdown-item(href='#') Another action
+        //-             a.dropdown-item(href='#') One more action
+        //-             .dropdown-divider
+        //-             a.dropdown-item(href='#') Separate action
+        //- ul.navbar-nav.ml-md-auto
+        //-     li.nav-item
+        //-         a.navbar-nav-link(href='#')
+        //-             | Link
+        //-             span.badge.badge-pill.bg-indigo-400.position-static.ml-auto.ml-md-2 28
+        //-     li.nav-item.dropdown
+        //-         a.navbar-nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+        //-             | Dropdown
+        //-         .dropdown-menu.dropdown-menu-right
+        //-             a.dropdown-item(href='#') Action
+        //-             a.dropdown-item(href='#') Another action
+        //-             a.dropdown-item(href='#') One more action
+        //-             .dropdown-divider
+        //-             a.dropdown-item(href='#') Separate action

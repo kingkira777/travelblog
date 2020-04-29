@@ -1,0 +1,368 @@
+extends ../layout    
+
+
+block content 
+    .d-flex.align-items-start.flex-column.flex-md-row
+        // Left content
+        //- .w-100.overflow-auto.order-2.order-md-2
+        .w-100.order-2.order-md-2
+            // Post grid
+            .row
+                .col-md-4
+                    .card
+                        .card-body
+                            .card-img-actions.mb-3
+                                img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                                .card-img-actions-overlay.card-img
+                                    a.btn.btn-outline.bg-white.text-white.border-white.border-2.btn-icon.rounded-round(href='blog_single.html')
+                                        i.icon-link
+                            h5.font-weight-semibold.mb-1
+                                a.text-default(href='#') Wisdom new and valley answer
+                            ul.list-inline.list-inline-dotted.text-muted.mb-3
+                                li.list-inline-item
+                                    | By 
+                                    a.text-muted(href='#') Eugene
+                                li.list-inline-item July 19th, 2016
+                            | 										Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.
+                        .card-footer.d-flex
+                            a.text-default(href='#')
+                                i.icon-heart6.text-pink.mr-2
+                                |  64
+                            a.ml-auto(href='/read-artilce')
+                                | Read more 
+                                i.icon-arrow-right14.ml-2
+                .col-md-4
+                    .card
+                        .card-body
+                            .card-img-actions.mb-3
+                                img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                                .card-img-actions-overlay.card-img
+                                    a.btn.btn-outline.bg-white.text-white.border-white.border-2.btn-icon.rounded-round(href='blog_single.html')
+                                        i.icon-link
+                            h5.font-weight-semibold.mb-1
+                                a.text-default(href='#') Announcing of invitation principles
+                            ul.list-inline.list-inline-dotted.text-muted.mb-3
+                                li.list-inline-item
+                                    | By 
+                                    a.text-muted(href='#') Eugene
+                                li.list-inline-item July 18th, 2016
+                            | 										Cold in late or deal. Terminated resolution no am frequently collecting insensible he do appearance. Projection invitation affronting admiration if no on or. It as instrument boisterous frequently apartments an in. Mr excellence inquietude conviction is in
+                        .card-footer.d-flex
+                            a.text-default(href='#')
+                                i.icon-heart6.text-pink.mr-2
+                                |  49
+                            a.ml-auto(href='/read-artilce')
+                                | Read more 
+                                i.icon-arrow-right14.ml-2
+                .col-md-4
+                    .card
+                        .card-body
+                            .card-img-actions.mb-3
+                                img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                                .card-img-actions-overlay.card-img
+                                    a.btn.btn-outline.bg-white.text-white.border-white.border-2.btn-icon.rounded-round(href='blog_single.html')
+                                        i.icon-link
+                            h5.font-weight-semibold.mb-1
+                                a.text-default(href='#') Increasing travelling own
+                            ul.list-inline.list-inline-dotted.text-muted.mb-3
+                                li.list-inline-item
+                                    | By 
+                                    a.text-muted(href='#') Eugene
+                                li.list-inline-item July 17th, 2016
+                            | 										Supplied directly pleasant we ignorant ecstatic of jointure so if. These spoke house of we. Ask put yet excuse person see change. Do inhabiting no stimulated unpleasing of admiration he. Enquire explain another he in brandon enjoyed be service. Given mrs she first china.
+                        .card-footer.d-flex
+                            a.text-default(href='#')
+                                i.icon-heart6.text-pink.mr-2
+                                |  391
+                            a.ml-auto(href='/read-artilce')
+                                | Read more 
+                                i.icon-arrow-right14.ml-2
+                
+            // /post grid
+            // Pagination
+            .d-flex.justify-content-center.mt-3.mb-3
+                ul.pagination
+                    li.page-item
+                        a.page-link(href='#')
+                            i.icon-arrow-small-right
+                    li.page-item.active
+                        a.page-link(href='#') 1
+                    li.page-item
+                        a.page-link(href='#') 2
+                    li.page-item
+                        a.page-link(href='#') 3
+                    li.page-item
+                        a.page-link(href='#') 4
+                    li.page-item
+                        a.page-link(href='#') 5
+                    li.page-item
+                        a.page-link(href='#')
+                            i.icon-arrow-small-left
+            // /pagination
+            // /left content
+            // Right sidebar component
+        .sidebar.sidebar-light.bg-transparent.sidebar-component.sidebar-component-right.border-0.shadow-0.order-1.order-md-2.sidebar-expand-md
+            // Sidebar content
+            .sidebar-content
+                // Search
+                .card
+                    .card-header.bg-transparent.header-elements-inline
+                        span.card-title.font-weight-semibold Search articles
+                        .header-elements
+                            .list-icons
+                                a.list-icons-item(data-action='collapse')
+                    .card-body
+                        form(action='#')
+                            .form-group-feedback.form-group-feedback-right
+                                input.form-control(type='search', placeholder='Search...')
+                                .form-control-feedback
+                                    i.icon-search4.font-size-base.text-muted
+                // /search
+                //- // Categories
+                //- .card
+                //-     .card-header.bg-transparent.header-elements-inline
+                //-         span.card-title.font-weight-semibold Categories
+                //-         .header-elements
+                //-             .list-icons
+                //-                 a.list-icons-item(data-action='collapse')
+                //-     .card-body.p-0
+                //-         .nav.nav-sidebar.my-2
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-wordpress
+                //-                     | 												Wordpress
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 12
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-film2
+                //-                     | 												Video
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 26
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-images2
+                //-                     | 												Images
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 83
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-certificate
+                //-                     | 												Articles
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 43
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-camera
+                //-                     | 												Photography
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 72
+                //-             li.nav-item
+                //-                 a.nav-link(href='#')
+                //-                     i.icon-bookmark
+                //-                     | 												Books
+                //-                     span.text-muted.font-size-sm.font-weight-normal.ml-auto 97
+                //- // /categories
+                
+                
+                //- // Share
+                //- .card
+                //-     .card-header.bg-transparent.header-elements-inline
+                //-         span.card-title.font-weight-semibold Share
+                //-         .header-elements
+                //-             .list-icons
+                //-                 a.list-icons-item(data-action='collapse')
+                //-     .card-body.pb-0
+                //-         ul.list-inline.list-inline-condensed.text-center.mb-0
+                //-             li.list-inline-item
+                //-                 a.btn.bg-indigo.btn-icon.btn-lg.rounded-round.mb-3(href='#')
+                //-                     i.icon-facebook
+                //-             li.list-inline-item
+                //-                 a.btn.bg-danger.btn-icon.btn-lg.rounded-round.mb-3(href='#')
+                //-                     i.icon-youtube3
+                //-             li.list-inline-item
+                //-                 a.btn.bg-info.btn-icon.btn-lg.rounded-round.mb-3(href='#')
+                //-                     i.icon-twitter
+                //-             li.list-inline-item
+                //-                 a.btn.bg-orange.btn-icon.btn-lg.rounded-round.mb-3(href='#')
+                //-                     i.icon-feed3
+                //- // /share
+
+
+                //- // Recent comments
+                //- .card
+                //-     .card-header.bg-transparent.header-elements-inline
+                //-         span.card-title.font-weight-semibold Recent comments
+                //-         .header-elements
+                //-             .list-icons
+                //-                 a.list-icons-item(data-action='collapse')
+                //-     .card-body
+                //-         ul.media-list
+                //-             li.media
+                //-                 .mr-3
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title(href='#')
+                //-                         .font-weight-semibold James Alexander
+                //-                     span.text-muted Who knows, maybe that...
+                //-             li.media
+                //-                 .mr-3
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title(href='#')
+                //-                         .font-weight-semibold Margo Baker
+                //-                     span.text-muted That was something he...
+                //-             li.media
+                //-                 .mr-3
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title(href='#')
+                //-                         .font-weight-semibold Jeremy Victorino
+                //-                     span.text-muted But that would be...
+                //-             li.media
+                //-                 .mr-3
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title(href='#')
+                //-                         .font-weight-semibold Beatrix Diaz
+                //-                     span.text-muted What a strenuous career...
+                //-             li.media
+                //-                 .mr-3
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title(href='#')
+                //-                         .font-weight-semibold Richard Vango
+                //-                     span.text-muted Other travelling salesmen...
+                //- // /recent comments
+
+
+
+
+
+                //- // Photos from Flickr
+                //- .card
+                //-     .card-header.bg-transparent.header-elements-inline
+                //-         span.card-title.font-weight-semibold Photos from Flickr
+                //-         .header-elements
+                //-             .list-icons
+                //-                 a.list-icons-item(data-action='collapse')
+                //-     .card-body
+                //-         .row
+                //-             .col
+                //-                 .mb-2
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //-                 .mb-2
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //-                 div
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //-             .col
+                //-                 .mb-2
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //-                 .mb-2
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //-                 div
+                //-                     .card-img-actions
+                //-                         a(href='../../../../global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                //-                             img.card-img.img-fluid(src='../../../../global_assets/images/placeholders/placeholder.jpg', alt='')
+                //-                             span.card-img-actions-overlay.card-img
+                //-                                 i.icon-plus3
+                //- // /photos from Flickr
+                
+                
+                
+                
+                //- // Online users
+                //- .card
+                //-     .card-header.bg-transparent.header-elements-inline
+                //-         span.card-title.font-weight-semibold Online users
+                //-         .header-elements
+                //-             .list-icons
+                //-                 a.list-icons-item(data-action='collapse')
+                //-     .card-body
+                //-         ul.media-list
+                //-             li.media
+                //-                 a.mr-3(href='#')
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title.font-weight-semibold(href='#') James Alexander
+                //-                     .font-size-sm.text-muted Santa Ana, CA.
+                //-                 .ml-3.align-self-center
+                //-                     span.badge.badge-mark.border-success
+                //-             li.media
+                //-                 a.mr-3(href='#')
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title.font-weight-semibold(href='#') Jeremy Victorino
+                //-                     .font-size-sm.text-muted Dowagiac, MI.
+                //-                 .ml-3.align-self-center
+                //-                     span.badge.badge-mark.border-danger
+                //-             li.media
+                //-                 a.mr-3(href='#')
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title.font-weight-semibold(href='#') Margo Baker
+                //-                     .font-size-sm.text-muted Kasaan, AK.
+                //-                 .ml-3.align-self-center
+                //-                     span.badge.badge-mark.border-success
+                //-             li.media
+                //-                 a.mr-3(href='#')
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title.font-weight-semibold(href='#') Beatrix Diaz
+                //-                     .font-size-sm.text-muted Neenah, WI.
+                //-                 .ml-3.align-self-center
+                //-                     span.badge.badge-mark.border-warning
+                //-             li.media
+                //-                 a.mr-3(href='#')
+                //-                     img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='36', height='36', alt='')
+                //-                 .media-body
+                //-                     a.media-title.font-weight-semibold(href='#') Richard Vango
+                //-                     .font-size-sm.text-muted Grapevine, TX.
+                //-                 .ml-3.align-self-center
+                //-                     span.badge.badge-mark.border-grey-400
+                //- // /online users
+                
+                
+                
+                
+                // Archive
+                .card
+                    .card-header.bg-transparent.header-elements-inline
+                        span.card-title.font-weight-semibold Archive
+                        .header-elements
+                            .list-icons
+                                a.list-icons-item(data-action='collapse')
+                    .card-body.p-0
+                        .nav.nav-sidebar.my-2
+                            li.nav-item
+                                a.nav-link(href='#') January 2018
+                            li.nav-item
+                                a.nav-link(href='#') December 2017
+                            li.nav-item
+                                a.nav-link(href='#') November 2017
+                            li.nav-item
+                                a.nav-link(href='#') October 2017
+                            li.nav-item
+                                a.nav-link(href='#') September 2017
+                            li.nav-item
+                                a.nav-link(href='#') August 2017
+                            li.nav-item
+                                a.nav-link(href='#') July 2017
+                // /archive
+                // /sidebar content
+                // /right sidebar component

@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title=title
+    //- Global stylesheets
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900', rel='stylesheet', type='text/css')
+    link(href='/global_assets/css/icons/icomoon/styles.min.css', rel='stylesheet', type='text/css')
+    link(href='/global_assets/css/icons/fontawesome/styles.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/bootstrap_limitless.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/layout.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/components.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/colors.min.css', rel='stylesheet', type='text/css')
+
+
+  body.layout-boxed-bg.navbar-top
+
+    .d-flex.flex-column.flex-1.layout-boxed
+      //- .fixed-top
+      include partials/main-navbar
+
+      .page-content
+        //- Sidebar Here 
+
+        //- Content 
+        .content-wrapper
+          include partials/page-header
+          
+          .content
+            block content
+
+    //- core JS files
+    script(src='/global_assets/js/main/jquery.min.js')
+    script(src='/global_assets/js/main/bootstrap.bundle.min.js')
+    script(src='/global_assets/js/plugins/loaders/blockui.min.js')
+
+    //- EDITOR
+    script(src="/global_assets/js/plugins/editors/summernote/summernote.min.js")
+    script(src="/global_assets/js/plugins/editors/ckeditor/ckeditor.js")
+    script(src="/global_assets/js/plugins/media/fancybox.min.js")
+    script(src="/global_assets/js/plugins/forms/styling/uniform.min.js")
+
+
+    //- Theme JS files
+    script(src='/assets/js/app.js')
+    script(src="/global_assets/js/demo_pages/blog_single.js")
+    script(src="/global_assets/js/demo_pages/user_pages_profile.js")
+    block page-script
+

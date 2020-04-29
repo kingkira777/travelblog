@@ -1,0 +1,310 @@
+extends ../layout    
+
+
+block content 
+    .d-flex.align-items-start.flex-column.flex-md-row
+        // Left content
+        //- .w-100.overflow-auto.order-2.order-md-2
+        .w-100.order-2.order-md-2
+            // Post grid
+            .row
+                .col-md-12
+                    .card
+                        .card-body
+                            .mb-3
+                                h5.font-weight-semibold.mb-
+                                    a.text-default(href='#') Blog post #4 title
+                                ul.list-inline.list-inline-dotted.mb-3
+                                    li.list-inline-item
+                                        | By 
+                                        a(href='#') Eugene
+                                    li.list-inline-item July 5th, 2016
+                                    li.list-inline-item
+                                        a(href='#') 12 comments
+                                    li.list-inline-item
+                                        a(href='#')
+                                            i.icon-heart6.font-size-base.text-pink.mr-2
+                                            |  281
+                            p.mb-3
+                                | One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+                            blockquote.blockquote.blockquote-bordered.py-2.pl-3.mb-0
+                                p.mb-2.font-size-base
+                                    | When suspiciously goodness labrador understood rethought yawned grew piously endearingly inarticulate oh goodness jeez trout distinct hence cobra.
+                                footer.blockquote-footer
+                                    | Jason, 
+                                    cite(title='Source Title') 10:39 am
+                        //- .card-footer.d-flex.justify-content-between.align-items-center.py-2
+                        //-     ul.list-inline.mb-0
+                        //-         li.list-inline-item
+                        //-             a.d-flex.align-items-center(href='#')
+                        //-                 span.position-relative
+                        //-                     img.rounded-circle(src='/global_assets/images/placeholders/placeholder.jpg', width='32', height='32', alt='')
+                        //-                     span.badge.badge-mark.badge-float.border-danger.mt-1.mr-1
+                        //-                 span.ml-2 Eugene Kopyov
+                        //-     a(href='#')
+                        //-         | Full article 
+                        //-         i.icon-circle-right2.ml-2
+
+
+            .row
+                .col-md-12 
+                    .card
+                        .card-header.header-elements-inline
+                            h6.card-title About the author
+                            .header-elements
+                                .list-icons.list-icons-extended
+                                    a.list-icons-item(href='#', data-popup='tooltip', data-container='body', title='', data-original-title='Google Drive')
+                                        i.icon-google-drive
+                                    a.list-icons-item(href='#', data-popup='tooltip', data-container='body', title='', data-original-title='Twitter')
+                                        i.icon-twitter
+                                    a.list-icons-item(href='#', data-popup='tooltip', data-container='body', title='', data-original-title='Github')
+                                        i.icon-github
+                                    a.list-icons-item(href='#', data-popup='tooltip', data-container='body', title='', data-original-title='Linked In')
+                                        i.icon-linkedin
+                        .media.card-body.flex-column.flex-md-row.m-0
+                            .mr-md-3.mb-2.mb-md-0
+                                a(href='#')
+                                    img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='64', height='64', alt='')
+                            .media-body
+                                h6.media-title.font-weight-semibold James Alexander
+                                p
+                                    | So slit more darn hey well wore submissive savage this shark aardvark fumed thoughtfully much drank when angelfish so outgrew some alas vigorously therefore warthog superb less oh groundhog less alas gibbered barked some hey despicably with aesthetic hamster jay by luckily
+                                ul.list-inline.list-inline-dotted.mb-0
+                                    li.list-inline-item
+                                        a(href='#') Author profile
+                                    li.list-inline-item
+                                        a(href='#') All posts by James
+                                    li.list-inline-item
+                                        a(href='#') http://website.com
+                    
+            
+            .row 
+                .col-md-12 
+                    .card
+                        .card-header.header-elements-inline
+                            h6.card-title.font-weight-semibold Discussion
+                            .header-elements
+                                ul.list-inline.list-inline-dotted.text-muted.mb-0
+                                    li.list-inline-item 42 comments
+                                    li.list-inline-item 75 pending review
+                        .card-body
+                            ul.media-list
+                                li.media.flex-column.flex-md-row
+                                    .mr-md-3.mb-2.mb-md-0
+                                        a(href='#')
+                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                    .media-body
+                                        .media-title
+                                            a.font-weight-semibold(href='#') William Jennings
+                                            span.text-muted.ml-3 Just now
+                                        p
+                                            | He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to.
+                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                            li.list-inline-item
+                                                | 114 
+                                                a(href='#')
+                                                    i.icon-arrow-up22.text-success
+                                                a(href='#')
+                                                    i.icon-arrow-down22.text-danger
+                                            li.list-inline-item
+                                                a(href='#') Reply
+                                            li.list-inline-item
+                                                a(href='#') Edit
+                                li.media.flex-column.flex-md-row
+                                    .mr-md-3.mb-2.mb-md-0
+                                        a(href='#')
+                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                    .media-body
+                                        .media-title
+                                            a.font-weight-semibold(href='#') Margo Baker
+                                            span.text-muted.ml-3 5 minutes ago
+                                        p
+                                            | Place voice no arise along to. Parlors waiting so against me no. Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor.
+                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                            li.list-inline-item
+                                                | 90 
+                                                a(href='#')
+                                                    i.icon-arrow-up22.text-success
+                                                a(href='#')
+                                                    i.icon-arrow-down22.text-danger
+                                            li.list-inline-item
+                                                a(href='#') Reply
+                                            li.list-inline-item
+                                                a(href='#') Edit
+                                li.media.flex-column.flex-md-row
+                                    .mr-md-3.mb-2.mb-md-0
+                                        a(href='#')
+                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                    .media-body
+                                        .media-title
+                                            a.font-weight-semibold(href='#') James Alexander
+                                            span.text-muted.ml-3 7 minutes ago
+                                        p
+                                            | Savings her pleased are several started females met. Short her not among being any. Thing of judge fruit charm views do. Miles mr an forty along as he.
+                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                            li.list-inline-item
+                                                | 70 
+                                                a(href='#')
+                                                    i.icon-arrow-up22.text-success
+                                                a(href='#')
+                                                    i.icon-arrow-down22.text-danger
+                                            li.list-inline-item
+                                                a(href='#') Reply
+                                            li.list-inline-item
+                                                a(href='#') Edit
+                                        .media.flex-column.flex-md-row
+                                            .mr-md-3.mb-2.mb-md-0
+                                                a(href='#')
+                                                    img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                            .media-body
+                                                .media-title
+                                                    a.font-weight-semibold(href='#') Jack Cooper
+                                                    span.text-muted.ml-3 10 minutes ago
+                                                p
+                                                    | She education get middleton day agreement performed preserved unwilling. Do however as pleased offence outward beloved by present. By outward neither he so covered.
+                                                ul.list-inline.list-inline-dotted.font-size-sm
+                                                    li.list-inline-item
+                                                        | 67 
+                                                        a(href='#')
+                                                            i.icon-arrow-up22.text-success
+                                                        a(href='#')
+                                                            i.icon-arrow-down22.text-danger
+                                                    li.list-inline-item
+                                                        a(href='#') Reply
+                                                    li.list-inline-item
+                                                        a(href='#') Edit
+                                                .media.flex-column.flex-md-row
+                                                    .mr-md-3.mb-2.mb-md-0
+                                                        a(href='#')
+                                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                                    .media-body
+                                                        .media-title
+                                                            a.font-weight-semibold(href='#') Natalie Wallace
+                                                            span.text-muted.ml-3 1 hour ago
+                                                        p
+                                                            | Juvenile proposal betrayed he an informed weddings followed. Precaution day see imprudence sympathize principles. At full leaf give quit to in they up.
+                                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                                            li.list-inline-item
+                                                                | 54 
+                                                                a(href='#')
+                                                                    i.icon-arrow-up22.text-success
+                                                                a(href='#')
+                                                                    i.icon-arrow-down22.text-danger
+                                                            li.list-inline-item
+                                                                a(href='#') Reply
+                                                            li.list-inline-item
+                                                                a(href='#') Edit
+                                                .media.flex-column.flex-md-row
+                                                    .mr-md-3.mb-2.mb-md-0
+                                                        a(href='#')
+                                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                                    .media-body
+                                                        .media-title
+                                                            a.font-weight-semibold(href='#') Nicolette Grey
+                                                            span.text-muted.ml-3 2 hours ago
+                                                        p
+                                                            | Although moreover mistaken kindness me feelings do be marianne. Son over own nay with tell they cold upon are. Cordial village and settled she ability law herself.
+                                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                                            li.list-inline-item
+                                                                | 41 
+                                                                a(href='#')
+                                                                    i.icon-arrow-up22.text-success
+                                                                a(href='#')
+                                                                    i.icon-arrow-down22.text-danger
+                                                            li.list-inline-item
+                                                                a(href='#') Reply
+                                                            li.list-inline-item
+                                                                a(href='#') Edit
+                                li.media.flex-column.flex-md-row
+                                    .mr-md-3.mb-2.mb-md-0
+                                        a(href='#')
+                                            img.rounded-circle(src='../../../../global_assets/images/placeholders/placeholder.jpg', width='38', height='38', alt='')
+                                    .media-body
+                                        .media-title
+                                            a.font-weight-semibold(href='#') Victoria Johnson
+                                            span.text-muted.ml-3 3 hours ago
+                                        p
+                                            | Finished why bringing but sir bachelor unpacked any thoughts. Unpleasing unsatiable particular inquietude did nor sir.
+                                        ul.list-inline.list-inline-dotted.font-size-sm
+                                            li.list-inline-item
+                                                | 32 
+                                                a(href='#')
+                                                    i.icon-arrow-up22.text-success
+                                                a(href='#')
+                                                    i.icon-arrow-down22.text-danger
+                                            li.list-inline-item
+                                                a(href='#') Reply
+                                            li.list-inline-item
+                                                a(href='#') Edit
+                        hr.m-0
+                        .card-body
+                            h6.mb-3 Add comment
+                            .mb-3
+                                #add-comment(style='visibility: hidden; display: none;')
+                                    | Get his declared appetite distance his together now families. Friends am himself at on norland it viewing. Suspected elsewhere you belonging continued commanded she...
+                               
+                            .text-right
+                                button.btn.bg-blue(type='button')
+                                    i.icon-plus22.mr-1
+                                    |  Add comment
+
+
+
+            // Right sidebar component
+        .sidebar.sidebar-light.bg-transparent.sidebar-component.sidebar-component-right.border-0.shadow-0.order-1.order-md-2.sidebar-expand-md
+            // Sidebar content
+            .sidebar-content
+
+
+                // Photos from Flickr
+                .card
+                    .card-header.bg-transparent.header-elements-inline
+                        span.card-title.font-weight-semibold Photos from Flickr
+                        .header-elements
+                            .list-icons
+                                a.list-icons-item(data-action='collapse')
+                    .card-body
+                        .row
+                            .col
+                                .mb-2
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                                .mb-2
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                                div
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                            .col
+                                .mb-2
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                                .mb-2
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                                div
+                                    .card-img-actions
+                                        a(href='/global_assets/images/placeholders/placeholder.jpg', data-popup='lightbox')
+                                            img.card-img.img-fluid(src='/global_assets/images/placeholders/placeholder.jpg', alt='')
+                                            span.card-img-actions-overlay.card-img
+                                                i.icon-plus3
+                // /photos from Flickr
+                
+                
+                
+            

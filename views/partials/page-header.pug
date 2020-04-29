@@ -1,0 +1,59 @@
+//- .page-header.page-header-light
+//-     .breadcrumb-line.breadcrumb-line-light.header-elements-md-inline
+//-         .d-flex
+//-             .breadcrumb
+//-                 a.breadcrumb-item(href='index.html')
+//-                     i.icon-home2.mr-2
+//-                     |  Home
+//-                 a.breadcrumb-item(href='#') Link
+//-                 span.breadcrumb-item.active Current
+//-             a.header-elements-toggle.text-default.d-md-none(href='#')
+//-                 i.icon-more
+//-         .header-elements.d-none
+//-             .breadcrumb.justify-content-center
+//-                 a.breadcrumb-elements-item(href='#')
+//-                     | Link
+//-                 .breadcrumb-elements-item.dropdown.p-0
+//-                     a.breadcrumb-elements-item.dropdown-toggle(href='#', data-toggle='dropdown')
+//-                         | Dropdown
+//-                     .dropdown-menu.dropdown-menu-right
+//-                         a.dropdown-item(href='#') Action
+//-                         a.dropdown-item(href='#') Another action
+//-                         a.dropdown-item(href='#') One more action
+//-                         .dropdown-divider
+//-                         a.dropdown-item(href='#') Separate action
+
+if(user)
+    .navbar.navbar-expand-lg.navbar-light.bg-light
+        .text-center.d-lg-none.w-100
+            button.navbar-toggler.dropdown-toggle(type='button', data-toggle='collapse', data-target='#navbar-second')
+                i.icon-menu7.mr-2
+                | 							Profile navigation
+        #navbar-second.navbar-collapse.collapse
+            ul.nav.navbar-nav
+                li.nav-item
+                    a.navbar-nav-link(href='#activity', data-toggle='tab')
+                        i.icon-menu7.mr-2
+                        | 									Activity
+                li.nav-item
+                    a.navbar-nav-link(href='#schedule', data-toggle='tab')
+                        i.icon-calendar3.mr-2
+                        | 									Schedule
+                        span.badge.badge-pill.bg-success.position-static.ml-auto.ml-lg-2 32
+                li.nav-item
+                    a.navbar-nav-link.active.show(href='#settings', data-toggle='tab')
+                        i.icon-cog3.mr-2
+                        | 									Settings
+            ul.navbar-nav.ml-lg-auto
+                li.nav-item
+                    a.navbar-nav-link(href='#')
+                        i.icon-stack-text.mr-2
+                        | 									Notes
+                li.nav-item
+                    a.navbar-nav-link(href='#')
+                        i.icon-collaboration.mr-2
+                        | 									Friends
+                li.nav-item
+                    a.navbar-nav-link(href='#')
+                        i.icon-images3.mr-2
+                        | 									Photos

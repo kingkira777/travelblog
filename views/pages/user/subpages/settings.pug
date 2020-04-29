@@ -1,0 +1,160 @@
+#settings.tab-pane.fade.show.active
+    // Profile info
+    .card
+        .card-header.header-elements-inline
+            h5.card-title Profile information
+            .header-elements
+                .list-icons
+                    a.list-icons-item(data-action='collapse')
+                    a.list-icons-item(data-action='reload')
+                    a.list-icons-item(data-action='remove')
+        .card-body
+            form(action='#')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Username
+                            input.form-control(type='text', value='Eugene')
+                        .col-md-6
+                            label Full name
+                            input.form-control(type='text', value='Kopyov')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Address line 1
+                            input.form-control(type='text', value='Ring street 12')
+                        .col-md-6
+                            label Address line 2
+                            input.form-control(type='text', value='building D, flat #67')
+                .form-group
+                    .row
+                        .col-md-4
+                            label City
+                            input.form-control(type='text', value='Munich')
+                        .col-md-4
+                            label State/Province
+                            input.form-control(type='text', value='Bayern')
+                        .col-md-4
+                            label ZIP code
+                            input.form-control(type='text', value='1031')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Email
+                            input.form-control(type='text', readonly='readonly', value='eugene@kopyov.com')
+                        .col-md-6
+                            label Your country
+                            select.form-control.form-control-select2.select2-hidden-accessible(data-fouc='', tabindex='-1', aria-hidden='true')
+                                option(value='germany', selected='') Germany
+                                option(value='france') France
+                                option(value='spain') Spain
+                                option(value='netherlands') Netherlands
+                                option(value='other') ...
+                                option(value='uk') United Kingdom
+                            span.select2.select2-container.select2-container--default.select2-container--below(dir='ltr', style='width: 100%;')
+                                span.selection
+                                    span.select2-selection.select2-selection--single(role='combobox', aria-haspopup='true', aria-expanded='false', tabindex='0', aria-labelledby='select2-oonp-container')
+                                        span#select2-oonp-container.select2-selection__rendered(title='Germany') Germany
+                                        span.select2-selection__arrow(role='presentation')
+                                            b(role='presentation')
+                                span.dropdown-wrapper(aria-hidden='true')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Phone #
+                            input.form-control(type='text', value='+99-99-9999-9999')
+                            span.form-text.text-muted +99-99-9999-9999
+                        .col-md-6
+                            label Upload profile image
+                            .uniform-uploader
+                                input.form-input-styled(type='file', data-fouc='')
+                                span.filename(style='user-select: none;') No file selected
+                                span.action.btn.bg-warning(style='user-select: none;') Choose File
+                            span.form-text.text-muted Accepted formats: gif, png, jpg. Max file size 2Mb
+                .text-right
+                    button.btn.btn-primary(type='submit') Save changes
+    // /profile info
+    // Account settings
+    .card
+        .card-header.header-elements-inline
+            h5.card-title Account settings
+            .header-elements
+                .list-icons
+                    a.list-icons-item(data-action='collapse')
+                    a.list-icons-item(data-action='reload')
+                    a.list-icons-item(data-action='remove')
+        .card-body
+            form(action='#')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Username
+                            input.form-control(type='text', value='Kopyov', readonly='readonly')
+                        .col-md-6
+                            label Current password
+                            input.form-control(type='password', value='password', readonly='readonly')
+                .form-group
+                    .row
+                        .col-md-6
+                            label New password
+                            input.form-control(type='password', placeholder='Enter new password')
+                        .col-md-6
+                            label Repeat password
+                            input.form-control(type='password', placeholder='Repeat new password')
+                .form-group
+                    .row
+                        .col-md-6
+                            label Profile visibility
+                            .form-check
+                                label.form-check-label
+                                    .uniform-choice
+                                        span
+                                            input.form-input-styled(type='radio', name='visibility', checked='', data-fouc='')
+                                    | 															Visible to everyone
+                            .form-check
+                                label.form-check-label
+                                    .uniform-choice
+                                        span.checked
+                                            input.form-input-styled(type='radio', name='visibility', data-fouc='')
+                                    | 															Visible to friends only
+                            .form-check
+                                label.form-check-label
+                                    .uniform-choice
+                                        span
+                                            input.form-input-styled(type='radio', name='visibility', data-fouc='')
+                                    | 															Visible to my connections only
+                            .form-check
+                                label.form-check-label
+                                    .uniform-choice
+                                        span
+                                            input.form-input-styled(type='radio', name='visibility', data-fouc='')
+                                    | 															Visible to my colleagues only
+                        .col-md-6
+                            label Notifications
+                            .form-check
+                                label.form-check-label
+                                    .uniform-checker
+                                        span.checked
+                                            input.form-input-styled(type='checkbox', checked='', data-fouc='')
+                                    | 															Password expiration notification
+                            .form-check
+                                label.form-check-label
+                                    .uniform-checker
+                                        span.checked
+                                            input.form-input-styled(type='checkbox', checked='', data-fouc='')
+                                    | 															New message notification
+                            .form-check
+                                label.form-check-label
+                                    .uniform-checker
+                                        span.checked
+                                            input.form-input-styled(type='checkbox', checked='', data-fouc='')
+                                    | 															New task notification
+                            .form-check
+                                label.form-check-label
+                                    .uniform-checker
+                                        span
+                                            input.form-input-styled(type='checkbox')
+                                    | 															New contact request notification
+                .text-right
+                    button.btn.btn-primary(type='submit') Save changes
+    // /account settings
